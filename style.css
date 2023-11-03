@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--Red: hsl(0, 100%, 74%) ;
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--DarkBlue: hsl(249, 10%, 26%); 
+--GrayishBlue: hsl(246, 25%, 77%);
+--Green2:hsl(154, 46%, 48%); ;
+
+}
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.container{
+    margin: auto;
+}
+header{
+    text-align: center;
+    color:whitesmoke;
+    width: 310px;
+    margin: 98px auto 0;
+   
+    height:226px ;
+
+}
+header h1{
+    font-size: 1.7em;
+    line-height: 1.2;
+    
+}
+.parrafo{
+    font-size: 1em;
+    margin: 25px auto 25px;
+    
+    height:125px ;
+}
+.seven-days{
+    width: 325px;
+    height: 86px;
+    background-color: var(--Blue);
+    color: whitesmoke;
+    font-size: 0.9em;
+    font-weight:400 ;
+    border: 1px;
+    border-radius: 8px;
+    margin:50px auto 0;
+    box-shadow:0px 10px 2px hsl(0, 56%, 61%) ;
+    text-align: center;
+    padding:25px 80px;
+
+
+}
+.text-seven-days-complet{
+    width: 170px;
+    ;
+}
+.try{
+    font-weight: 800;
+    
+}
+.container-formulario{
+    background-color: whitesmoke;
+    width: 330px;
+    height: 445px;
+    margin: 24px auto 0;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow:0px 10px 2px hsl(0, 56%, 61%) ;
+   
+}
+
+
+.container-formulario input{
+    width:280px ;
+    height:54px ;
+    border:solid 1px rgb(219, 211, 211);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 13px;
+    
+    
+
+}
+
+
+
+.only-inputs{
+    
+    width: 280px;
+    height: 345px;
+    display: flex;
+   padding: 0px;
+
+}
+.terminos-condiciones{
+    width:230px ;
+    font-size: 0.7em;
+    
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(207, 203, 203);
+}
+.terms{
+   color: rgb(201, 86, 86);
+   font-weight: 600;
+}
+.boton{
+    background-color: var(--Green);
+    color: whitesmoke;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    width:280px ;
+    height:54px ;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 13px;
+    border-bottom: solid 3px var(--Green2) ;
+    border-top:solid 1px var(--Green2)  ;
+    border-left:solid 1px var(--Green2)   ;
+    border-right: solid 1px var(--Green2)  ;
+    
+
+  
+}
+footer{
+    margin: 20px auto;
+}
+/*********************footer************************************/
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+.icono-peligro {
+    color: red; /* Color del icono de peligro */
+    margin-left: 5px; /* Espacio entre el icono y el campo de entrada */
+    display: none ;
+    position: relative;
+    left: 240px;
+    bottom: 55px;
+
+
+    /* Oculta el icono inicialmente */
+  }
+  .oculto{
+    display: none; /* Oculta el icono inicialmente */
+    font-size: 0.6em;
+    position: relative;
+    left: 110px;
+    bottom: 28px;
+    color: red;
+
+  }
+button:hover{
+    cursor: pointer;
+}
+
+
+
+/*******************800px********************************************/
+@media only screen and (min-width: 800px){
+.container{
+    margin: auto;
+.seven-days{
+    max-width: 540px;
+    width: 540px;
+    
+}
+.container-formulario{
+    background-color: whitesmoke;
+    width: 540px;
+    height: 445px;
+    margin: 24px auto 0;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow:0px 10px 2px hsl(0, 56%, 61%) ;
+   
+}
+header{
+    text-align: center;
+    color:whitesmoke;
+    width: 500px;
+    margin: 98px auto 0;
+   
+    height:226px ;
+
+}
+
+}
+.container-formulario input{
+    width: 490px;
+    height:54px ;
+   
+    
+    
+    
+
+}
+.boton{
+    background-color: var(--Green);
+    color: whitesmoke;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    width:490px ;
+    height:54px ;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 13px;
+    border-bottom: solid 3px var(--Green2) ;
+    border-top:solid 1px var(--Green2)  ;
+    border-left:solid 1px var(--Green2)   ;
+    border-right: solid 1px var(--Green2)  ;
+    
+
+  
+}
+
+
+}
+/*******************1440px********************************************/
+@media only screen and (min-width: 1440px){
+    .container{
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        
+    
+    
+    }
+
+
+    .seven-days{
+        max-width: 540px;
+        width: 540px;
+        
+        text-align: center;
+        
+        
+    }
+    .container-formulario{
+        background-color: whitesmoke;
+        width: 540px;
+        height: 445px;
+        margin: 24px auto 0;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow:0px 10px 2px hsl(0, 56%, 61%) ;
+       
+    }
+    header{
+        text-align: center;
+        color:whitesmoke;
+        width: 700px;
+        margin: 98px auto 0;
+        height:226px ;
+        grid-row: 1/2;
+        position: relative;
+        top: 200px;
+        padding-left: 60px;
+       
+        
+    
+    }
+    header h1{
+        font-size: 3em;
+    }
+    
+    }
+    .container-formulario input{
+        
+        height:54px ;
+        
+        
+        font-weight: 800;
+        font-size: 13px;
+        
+        
+    
+    }
+    .boton{
+        background-color: var(--Green);
+        color: whitesmoke;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+       
+        height:54px ;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 20px;
+        font-weight: 800;
+        font-size: 13px;
+        border-bottom: solid 3px var(--Green2) ;
+        border-top:solid 1px var(--Green2)  ;
+        border-left:solid 1px var(--Green2)   ;
+        border-right: solid 1px var(--Green2)  ;
+        
+        
+      
+    }
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
