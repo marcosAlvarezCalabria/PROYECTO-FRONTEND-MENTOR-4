@@ -191,10 +191,8 @@ button:hover{
 header{
     text-align: center;
     color:whitesmoke;
-    width: 500px;
-    margin: 98px auto 0;
-   
-    height:226px ;
+    width: 500px; 
+    height:126px ;
 
 }
 
@@ -232,7 +230,31 @@ header{
 }
 
 
+/*.container{
+display: flex;
+max-width: 790px;
+border: solid 1px;
+
 }
+header h1{
+    max-width: 300px;
+    text-align: left;
+
+}
+header{
+    width: 400px;
+    
+    height: 500px;
+    padding-top: 150px;
+    text-align: left;
+}
+footer{
+    margin: 30px ;
+    
+    position: relative;
+    right: 200px;
+}*/
+
 /*******************1440px********************************************/
 @media only screen and (min-width: 1440px){
     .container{
@@ -271,7 +293,7 @@ header{
         height:226px ;
         grid-row: 1/2;
         position: relative;
-        top: 200px;
+        top: 120px;
         padding-left: 60px;
        
         
@@ -310,10 +332,17 @@ header{
         border-bottom: solid 3px var(--Green2) ;
         border-top:solid 1px var(--Green2)  ;
         border-left:solid 1px var(--Green2)   ;
-        border-right: solid 1px var(--Green2)  ;
+        border-right: solid 1px var(--Green2)  ;}
+
+
+    
+    }
+    footer{
+        position: relative;
+        right: 400px;
+        top: 50px;
         
-        
-      
+
     }
     
     
