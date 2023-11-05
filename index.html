@@ -29,19 +29,19 @@
   <div class="only-inputs">
     <form action="">
     
-      <input class="inputs" type="text" placeholder="First Name" id="name" name="user_name" />
-      <span class="icono-peligro" id="icono-peligro"> <img src="images/icon-error.svg" alt="" srcset=""></span><span id="alerta" class="oculto">First name cannot be empty</span>
-      <input class="inputs" type="text" placeholder="Last Name" id="name" name="user_name" />
-      <span class="icono-peligro" id="icono-peligro"> <img src="images/icon-error.svg" alt="" srcset=""></span>
-      <span id="alerta" class="oculto">Last name cannot be empty</span>
-      <input class="inputs" type="email" placeholder="Email Address" name="mail" id="email">
-      <span class="icono-peligro" id="icono-peligro"> <img src="images/icon-error.svg" alt="" srcset=""></span>
-      <span id="alerta" class="oculto"> Email cannot be empty</span>
-      <input class="inputs" type="password" placeholder="Password" name="password" id="password">
-      <span class="icono-peligro" id="icono-peligro"> <img src="images/icon-error.svg" alt="" srcset=""></span>
-      <span id="alerta" class="oculto">Password cannot be empty</span>
+      <input class="inputs" type="text" placeholder="First Name" id="firstNameInput" name="user_name" />
+     <div class="firstNameError" >  <span class="icono-peligro" id="icono-peligro"> <img src="images/icon-error.svg" alt="" srcset=""></span><span id="alerta" class="oculto">First name cannot be empty</span></div>
 
-      <button  class="boton inputs" type="button" value="Claim your free trial">Claim your free trial </button>
+      <input class="inputs" type="text" placeholder="Last Name" id="lastNameInput" name="user_name" />
+      <div class="lastNameError" ><span class="icono-peligro" id="icono-peligro"> <img src="images/icon-error.svg" alt="" srcset=""></span><span id="alerta" class="oculto">Last name cannot be empty</span></div>
+
+      <input class="inputs" type="email" placeholder="Email Address" name="mail" id="emailInput">
+      <div class="emailError"><span class="icono-peligro" id="icono-peligro"> <img src="images/icon-error.svg" alt="" srcset=""></span><span id="alerta" class="oculto"> Email cannot be empty</span></div>
+
+      <input class="inputs" type="password" placeholder="Password" name="password" id="passwordInput">
+      <div class="passwordError"><span class="icono-peligro" id="icono-peligro"> <img src="images/icon-error.svg" alt="" srcset=""></span><span id="alerta" class="oculto">Password cannot be empty</span></div>
+
+      <button id="button"  class="boton inputs" type="button" value="Claim your free trial">Claim your free trial </button>
     </form>
   </div>
   <div class="terminos-condiciones">
@@ -54,5 +54,6 @@
     </p>
   </footer>
   </div></div>
+  <script src="script.js"></script>
 </body>
 </html>

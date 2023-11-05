@@ -146,7 +146,7 @@ footer{
 .icono-peligro {
     color: red; /* Color del icono de peligro */
     margin-left: 5px; /* Espacio entre el icono y el campo de entrada */
-    display: none ;
+    display: ;
     position: relative;
     left: 240px;
     bottom: 55px;
@@ -155,7 +155,7 @@ footer{
     /* Oculta el icono inicialmente */
   }
   .oculto{
-    display: none; /* Oculta el icono inicialmente */
+    display: ; /* Oculta el icono inicialmente */
     font-size: 0.6em;
     position: relative;
     left: 110px;
@@ -166,7 +166,18 @@ footer{
 button:hover{
     cursor: pointer;
 }
-
+.firstNameError{
+    display: none;
+}
+.lastNameError{
+    display: none;
+}
+.emailError{
+    display: none;
+}
+.passwordError{
+    display: none;
+}
 
 
 /*******************800px********************************************/
@@ -229,31 +240,27 @@ header{
   
 }
 
-
-/*.container{
-display: flex;
-max-width: 790px;
-border: solid 1px;
-
-}
-header h1{
-    max-width: 300px;
-    text-align: left;
-
-}
-header{
-    width: 400px;
-    
-    height: 500px;
-    padding-top: 150px;
-    text-align: left;
-}
-footer{
-    margin: 30px ;
-    
+.icono-peligro {
+    color: red; /* Color del icono de peligro */
+    margin-left: 5px; /* Espacio entre el icono y el campo de entrada */
+    display: ;
     position: relative;
-    right: 200px;
-}*/
+    left: 440px;
+    bottom: 55px;
+
+
+    /* Oculta el icono inicialmente */
+  }
+  .oculto{
+    display: ; /* Oculta el icono inicialmente */
+    font-size: 0.6em;
+    position: relative;
+    left: 310px;
+    bottom: 28px;
+    color: red;
+
+  }
+
 
 /*******************1440px********************************************/
 @media only screen and (min-width: 1440px){
@@ -347,7 +354,7 @@ footer{
     
     
     
-    
+
 
 
 
