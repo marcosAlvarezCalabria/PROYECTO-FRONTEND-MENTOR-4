@@ -19,6 +19,11 @@ button.addEventListener('click',(event)=>{
  validatEmpty(lastName.value,lastName,lastNameError);
 validatEmpty(email.value,email,emailError);
 validatEmpty(password.value,password,passwordError);
+firstName.addEventListener('input', () => hideError(firstName, firstNameError));
+lastName.addEventListener('input', () => hideError(lastName, lastNameError));
+email.addEventListener('input', () => hideError(email, emailError));
+password.addEventListener('input', () => hideError(password, passwordError));
+
 
 })
 
@@ -34,6 +39,11 @@ function validatEmpty(valueInput , divInput, divError){
     }
     else{
       hideError(divInput,divError);//esta no nos muestra el error
+    }
+    if(valueInput.trim()!=="" ){
+
+      divError.style.display=' none';
+
     }
     
   }
@@ -53,5 +63,10 @@ function hideError(divInput,divError){
   
 
  
+
+}
+if(valueInput.trim()!==" " ){
+
+  divError.style.display=' none';
 
 }
